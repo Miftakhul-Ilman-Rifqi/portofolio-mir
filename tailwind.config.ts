@@ -11,6 +11,22 @@ const config: Config = {
     darkMode: ["class"],
     theme: {
         extend: {
+            animation: {
+                "meteor-effect": "meteor 5s linear infinite",
+            },
+            keyframes: {
+                meteor: {
+                    "0%": {
+                        transform: "rotate(215deg) translateX(0)",
+                        opacity: "1",
+                    },
+                    "70%": { opacity: "1" },
+                    "100%": {
+                        transform: "rotate(215deg) translateX(-500px)",
+                        opacity: "0",
+                    },
+                },
+            },
             colors: {
                 background: "hsl(var(--background))",
                 foreground: "hsl(var(--foreground))",
@@ -60,7 +76,12 @@ const config: Config = {
             },
         },
     },
-    plugins: [addVariablesForColors, tailwindcssAnimate],
+    plugins: [
+        addVariablesForColors,
+        tailwindcssAnimate,
+        // eslint-disable-next-line @typescript-eslint/no-require-imports
+        require("tailwind-scrollbar-hide"),
+    ],
 };
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
