@@ -6,7 +6,7 @@ export function ButtonSidebarLinkPreview() {
     return (
         <div className="flex justify-center items-center gap-6 mt-4">
             <LinkPreview
-                url="https://www.linkedin.com/in/miftakhul-ilman-rifqi-5b9576341/"
+                url="www.linkedin.com/in/miftakhul-ilman-rifqi"
                 imageSrc="/assets/linkedin-page.png"
                 isStatic
             >
