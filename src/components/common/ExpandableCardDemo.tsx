@@ -520,7 +520,7 @@ const cards: Card[] = [
         title: "Miftakhul Ilman Rifqi - Full Stack Web Developer",
         src: "/assets/porto/portomir-1.png",
         ctaText: "Visit",
-        ctaLink: "https://siaga.mirifqi.my.id",
+        ctaLink: "https://portofolio-mir.vercel.app/",
         mediaItems: [
             {
                 type: "image",
